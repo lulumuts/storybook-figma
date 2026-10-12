@@ -1,0 +1,31 @@
+/*
+ * Design tokens. Each custom property maps 1:1 to a Figma variable
+ * of the same name without the leading "--".
+ * Example: --color-primary -> color-primary
+ */
+:root {
+  --color-primary: #2f6f4e;
+  --color-secondary: #e4efe9;
+  --color-surface: #f6f8f7;
+  --color-border: #c9d6cf;
+  --color-text: #1a2b22;
+  --color-error: #9d3c34;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  --border-width: 1px;
+
+  --font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-weight-semibold: 600;
+}
