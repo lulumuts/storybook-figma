@@ -19,4 +19,4 @@ jobs:
       - uses: chromaui/action@v18
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          storybookBaseDir: ds-poc
+          workingDir: ds-poc
