@@ -12,8 +12,8 @@ const config: StorybookConfig = {
   ],
   "framework": "@storybook/react-vite",
   async viteFinal(viteConfig) {
-    if (process.env.GITHUB_ACTIONS) {
-      viteConfig.base = "/storybook-figma/";
+    if (process.env.STORYBOOK_BASE_PATH) {
+      viteConfig.base = process.env.STORYBOOK_BASE_PATH;
     }
     return viteConfig;
   },

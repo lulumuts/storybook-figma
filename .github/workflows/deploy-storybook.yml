@@ -29,6 +29,8 @@ jobs:
           cache-dependency-path: ds-poc/package-lock.json
       - run: npm ci
       - run: npm run build-storybook
+        env:
+          STORYBOOK_BASE_PATH: /storybook-figma/
       - uses: actions/upload-pages-artifact@v5
         with:
           path: ds-poc/storybook-static
