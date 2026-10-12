@@ -9,6 +9,13 @@ const config: StorybookConfig = {
     "@storybook/addon-docs",
     "@storybook/addon-designs"
   ],
-  "framework": "@storybook/react-vite"
+  "framework": "@storybook/react-vite",
+  async viteFinal(viteConfig) {
+    if (process.env.GITHUB_ACTIONS) {
+      viteConfig.base = "/storybook-figma/";
+    }
+    return viteConfig;
+  },
 };
+
 export default config;
