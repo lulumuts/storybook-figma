@@ -1,8 +1,11 @@
 import { useId } from 'react'
 import type { ChangeEvent } from 'react'
+import type { Brand } from '../../brand'
 import './Input.css'
 
 export interface InputProps {
+  /** Brand theme. Switches color, radius, and type. Omit to inherit the parent brand. */
+  brand?: Brand
   /** Visible label associated with the field. */
   label: string
   /** Placeholder shown when the field is empty. */
@@ -18,6 +21,7 @@ export interface InputProps {
 }
 
 export function Input({
+  brand,
   label,
   placeholder,
   value,
@@ -30,7 +34,10 @@ export function Input({
   const invalid = Boolean(error)
 
   return (
-    <div className={invalid ? 'ds-input ds-input--error' : 'ds-input'}>
+    <div
+      data-brand={brand}
+      className={invalid ? 'ds-input ds-input--error' : 'ds-input'}
+    >
       <label className="ds-input__label" htmlFor={id}>
         {label}
       </label>

@@ -45,3 +45,67 @@ export const WithoutFooter: Story = {
     },
   },
 }
+
+export const Grove: Story = {
+  args: {
+    brand: 'grove',
+    footer: (
+      <>
+        <span>Ready to save</span>
+        <Button variant="secondary" size="sm">
+          Save
+        </Button>
+      </>
+    ),
+  },
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'FIGMA_URL_PLACEHOLDER_CARD',
+    },
+  },
+}
+
+export const Harbor: Story = {
+  args: {
+    brand: 'harbor',
+    title: 'Harbor notes',
+    children: 'A short record of the tide, the light, and what still needs doing.',
+    footer: (
+      <>
+        <span>Ready to save</span>
+        <Button variant="secondary" size="sm">
+          Save
+        </Button>
+      </>
+    ),
+  },
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'FIGMA_URL_PLACEHOLDER_CARD',
+    },
+  },
+}
+
+export const Ember: Story = {
+  args: {
+    brand: 'ember',
+    title: 'Ember notes',
+    children: 'A short record of the kiln, the light, and what still needs doing.',
+    footer: (
+      <>
+        <span>Ready to save</span>
+        <Button variant="secondary" size="sm">
+          Save
+        </Button>
+      </>
+    ),
+  },
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'FIGMA_URL_PLACEHOLDER_CARD',
+    },
+  },
+}

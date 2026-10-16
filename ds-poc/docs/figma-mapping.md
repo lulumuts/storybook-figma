@@ -10,6 +10,7 @@ Primary button labels use `color-surface` for text. This POC has no separate on-
 
 | Prop | Figma property | Type | Values |
 | --- | --- | --- | --- |
+| `brand` | `brand` | Variant | `grove`, `harbor`, `ember` |
 | `variant` | `variant` | Variant | `primary`, `secondary` |
 | `size` | `size` | Variant | `sm`, `md` |
 | `disabled` | `disabled` | Boolean | `true`, `false` |
@@ -20,6 +21,7 @@ Primary button labels use `color-surface` for text. This POC has no separate on-
 
 | Prop | Figma property | Type | Values |
 | --- | --- | --- | --- |
+| `brand` | `brand` | Variant | `grove`, `harbor`, `ember` |
 | `label` | `label` | Text | Field label |
 | `placeholder` | `placeholder` | Text | Placeholder copy |
 | `value` | `value` | Text | Current value |
@@ -31,6 +33,7 @@ Primary button labels use `color-surface` for text. This POC has no separate on-
 
 | Prop | Figma property | Type | Values |
 | --- | --- | --- | --- |
+| `brand` | `brand` | Variant | `grove`, `harbor`, `ember` |
 | `title` | `title` | Text | Card heading |
 | `children` | `children` | Text | Main content |
 | `footer` | `footer` | Text | Optional. Leave empty to hide the footer |
@@ -61,6 +64,20 @@ Primary button labels use `color-surface` for text. This POC has no separate on-
 | `--font-weight-semibold` | `font-weight-semibold` | `600` |
 
 `color-error`, `border-width`, `font-family`, and `font-weight-semibold` are included so component CSS can express the error state, hairline borders, and type without hardcoded colors or lengths.
+
+The token table above is the Grove mode, which is also the `:root` default. Harbor and Ember are Figma modes on the same variable names. Spacing, border width, font size, and font weight stay the same across brands.
+
+| Token | Harbor | Ember |
+| --- | --- | --- |
+| `color-primary` | `#1b4f86` | `#8c3b22` |
+| `color-secondary` | `#e3eef8` | `#f6e6dc` |
+| `color-surface` | `#f3f7fb` | `#fbf6f3` |
+| `color-border` | `#c5d5e8` | `#e6d2c6` |
+| `color-text` | `#142033` | `#3a2418` |
+| `color-error` | `#9d3c48` | `#9d2c2c` |
+| `radius-sm` | `2px` | `12px` |
+| `radius-md` | `4px` | `20px` |
+| `font-family` | `Georgia, "Iowan Old Style", "Palatino Linotype", serif` | `"Avenir Next", "Segoe UI", sans-serif` |
 
 ## Design URL placeholders
 

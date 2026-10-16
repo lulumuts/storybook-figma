@@ -74,3 +74,39 @@ export const Error: Story = {
     },
   },
 }
+
+export const Grove: Story = {
+  args: {
+    brand: 'grove',
+  },
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'FIGMA_URL_PLACEHOLDER_INPUT',
+    },
+  },
+}
+
+export const Harbor: Story = {
+  args: {
+    brand: 'harbor',
+  },
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'FIGMA_URL_PLACEHOLDER_INPUT',
+    },
+  },
+}
+
+export const Ember: Story = {
+  args: {
+    brand: 'ember',
+  },
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'FIGMA_URL_PLACEHOLDER_INPUT',
+    },
+  },
+}

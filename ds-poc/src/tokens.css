@@ -2,8 +2,12 @@
  * Design tokens. Each custom property maps 1:1 to a Figma variable
  * of the same name without the leading "--".
  * Example: --color-primary -> color-primary
+ *
+ * :root is the Grove brand. Harbor and Ember override the same
+ * variables when an element sets data-brand.
  */
-:root {
+:root,
+[data-brand='grove'] {
   --color-primary: #2f6f4e;
   --color-secondary: #e4efe9;
   --color-surface: #f6f8f7;
@@ -11,6 +15,41 @@
   --color-text: #1a2b22;
   --color-error: #9d3c34;
 
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  --font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+}
+
+[data-brand='harbor'] {
+  --color-primary: #1b4f86;
+  --color-secondary: #e3eef8;
+  --color-surface: #f3f7fb;
+  --color-border: #c5d5e8;
+  --color-text: #142033;
+  --color-error: #9d3c48;
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  --font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+}
+
+[data-brand='ember'] {
+  --color-primary: #8c3b22;
+  --color-secondary: #f6e6dc;
+  --color-surface: #fbf6f3;
+  --color-border: #e6d2c6;
+  --color-text: #3a2418;
+  --color-error: #9d2c2c;
+
+  --radius-sm: 12px;
+  --radius-md: 20px;
+
+  --font-family: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+:root {
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
@@ -18,12 +57,8 @@
   --space-5: 20px;
   --space-6: 24px;
 
-  --radius-sm: 4px;
-  --radius-md: 8px;
-
   --border-width: 1px;
 
-  --font-family: system-ui, "Segoe UI", Roboto, sans-serif;
   --font-size-sm: 14px;
   --font-size-md: 16px;
   --font-size-lg: 20px;
