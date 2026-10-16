@@ -87,39 +87,3 @@ export const Disabled: Story = {
     },
   },
 }
-
-export const Grove: Story = {
-  args: {
-    brand: 'grove',
-  },
-  parameters: {
-    design: {
-      type: 'figma',
-      url: 'FIGMA_URL_PLACEHOLDER_BUTTON',
-    },
-  },
-}
-
-export const Harbor: Story = {
-  args: {
-    brand: 'harbor',
-  },
-  parameters: {
-    design: {
-      type: 'figma',
-      url: 'FIGMA_URL_PLACEHOLDER_BUTTON',
-    },
-  },
-}
-
-export const Ember: Story = {
-  args: {
-    brand: 'ember',
-  },
-  parameters: {
-    design: {
-      type: 'figma',
-      url: 'FIGMA_URL_PLACEHOLDER_BUTTON',
-    },
-  },
-}

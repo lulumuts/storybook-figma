@@ -3,7 +3,7 @@
  * of the same name without the leading "--".
  * Example: --color-primary -> color-primary
  *
- * :root is the Grove brand. Harbor and Ember override the same
+ * :root is the Grove brand. Other brands override the same
  * variables when an element sets data-brand.
  */
 :root,
@@ -47,6 +47,48 @@
   --radius-md: 20px;
 
   --font-family: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+[data-brand='linen'] {
+  --color-primary: #5c5348;
+  --color-secondary: #efe8df;
+  --color-surface: #f8f5f1;
+  --color-border: #ddd4c8;
+  --color-text: #2a261f;
+  --color-error: #8f4038;
+
+  --radius-sm: 6px;
+  --radius-md: 14px;
+
+  --font-family: "Palatino Linotype", Palatino, "Book Antiqua", serif;
+}
+
+[data-brand='moss'] {
+  --color-primary: #4a6b2f;
+  --color-secondary: #e5f0d8;
+  --color-surface: #f3f7ee;
+  --color-border: #c9d7b8;
+  --color-text: #1e2a16;
+  --color-error: #8a4030;
+
+  --radius-sm: 2px;
+  --radius-md: 6px;
+
+  --font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+[data-brand='clay'] {
+  --color-primary: #7a4e6d;
+  --color-secondary: #f6e8f0;
+  --color-surface: #fbf6f8;
+  --color-border: #e4d0db;
+  --color-text: #2e1c28;
+  --color-error: #9d2c48;
+
+  --radius-sm: 16px;
+  --radius-md: 28px;
+
+  --font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }
 
 :root {
